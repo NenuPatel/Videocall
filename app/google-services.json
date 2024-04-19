@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "329045992089",
+    "project_id": "phone-c57b7",
+    "storage_bucket": "phone-c57b7.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:329045992089:android:020ab78efc9eccfe848e08",
+        "android_client_info": {
+          "package_name": "com.example.phoneauthentication"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAY7Sj_LWI0nwKFY1LVbL0_Qf2cFYq9Zd4"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

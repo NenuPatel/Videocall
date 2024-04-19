@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#07145E"
+    tools:context=".MainActivity">
+    <TextView
+        android:id="@+id/welcome"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Welcome"
+        android:textSize="45dp"
+        android:textColor="@color/white"
+        android:layout_marginTop="200dp"
+        android:layout_marginLeft="20dp"
+        android:textStyle="bold"/>
+    <TextView
+        android:id="@+id/signin"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Sign in to continue"
+        android:textSize="20dp"
+        android:textColor="@color/white"
+        android:layout_below="@+id/welcome"
+        android:layout_marginLeft="20dp"/>
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/card2"
+        android:layout_width="362dp"
+        android:layout_height="110dp"
+        android:layout_below="@+id/signin"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="25dp"
+        android:backgroundTint="#333C70"
+        app:cardCornerRadius="20dp">
+
+        <TextView
+            android:id="@+id/Phone"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="PHONE NUMBER"
+            android:textColor="#687AE4"
+            android:textSize="18dp"
+            android:layout_margin="20dp"
+            android:textStyle="bold"
+            />
+        <ImageView
+            android:id="@+id/imgphone"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:src="@drawable/phoneno"
+            android:backgroundTint="#333C70"
+            android:layout_marginTop="50dp"
+            android:layout_marginLeft="20dp"/>
+
+        <EditText
+            android:id="@+id/userphoneno"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:hint="Enter Phone Number"
+            android:textStyle="normal"
+            android:textSize="20dp"
+            android:maxLength="10"
+            android:inputType="phone"
+            android:layout_marginTop="50dp"
+            android:textColor="@color/white"
+            android:padding="9dp"
+            android:layout_marginLeft="90dp"/>
+    </androidx.cardview.widget.CardView>
+
+    <Button
+        android:id="@+id/sendotp"
+        android:layout_width="362dp"
+        android:layout_height="wrap_content"
+        android:backgroundTint="#333C70"
+        android:text="SEND OTP"
+        android:textStyle="bold"
+        android:textSize="20dp"
+        android:layout_below="@+id/card2"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="20dp"/>
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/card3"
+        android:layout_width="362dp"
+        android:layout_height="50dp"
+        android:layout_below="@+id/sendotp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="25dp"
+        android:backgroundTint="#333C70"
+        app:cardCornerRadius="20dp">
+
+        <EditText
+            android:id="@+id/otp"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:inputType="number"
+            android:textColor="@color/white"/>
+    </androidx.cardview.widget.CardView>
+
+    <Button
+        android:id="@+id/verifyotp"
+        android:layout_width="362dp"
+        android:layout_height="wrap_content"
+        android:backgroundTint="#333C70"
+        android:text="Verify OTP"
+        android:textStyle="bold"
+        android:textSize="20dp"
+        android:layout_below="@+id/card3"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="20dp"
+        android:enabled="false"/>
+    <ProgressBar
+        android:id="@+id/bar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/verifyotp"
+        android:layout_centerHorizontal="true"
+        android:visibility="invisible"/>
+
+</RelativeLayout>
