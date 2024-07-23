@@ -1,8 +1,11 @@
 Features :
 
 ->User Authentication: User can Log in using Firebase Authentication.
+
 ->Phone no.: User can Log in using his phone number and for security aspect get OTP and then Log in in the application.
+
 ->Realtime Audio and Video Calling : User can communicate one to one connection by using Zegocloud api.
+
 ->Realtime Database: Data stored and retrived using Firebase Realtime Database.
 
 Output :
