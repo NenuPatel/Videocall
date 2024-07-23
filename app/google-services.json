@@ -1,0 +1,30 @@
+{
+  "project_info": {
+    "project_number": "917325437237",
+    "firebase_url": "https://webrtc-87e9a-default-rtdb.firebaseio.com",
+    "project_id": "webrtc-87e9a",
+    "storage_bucket": "webrtc-87e9a.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:917325437237:android:3acead46fc3bc7f883547c",
+        "android_client_info": {
+          "package_name": "com.example.facetime"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCRCREDwcms8abboRhk6_ILpHZwykHKbtk"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

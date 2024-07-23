@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#07145E"
+    tools:context=".MainActivity">
+    <TextView
+        android:id="@+id/welcome"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Welcome"
+        android:textSize="45dp"
+        android:textColor="@color/white"
+        android:layout_marginTop="200dp"
+        android:layout_marginLeft="20dp"
+        android:textStyle="bold"/>
+    <TextView
+        android:id="@+id/signin"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Sign in to continue"
+        android:textSize="20dp"
+        android:textColor="@color/white"
+        android:layout_below="@+id/welcome"
+        android:layout_marginLeft="20dp"/>
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/card1"
+        android:layout_width="362dp"
+        android:layout_height="110dp"
+        android:layout_below="@+id/signin"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="30dp"
+        android:backgroundTint="#333C70"
+        app:cardCornerRadius="20dp">
+
+        <TextView
+            android:id="@+id/username"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="20dp"
+            android:text="PHONE NUMBER"
+            android:textColor="#687AE4"
+            android:textSize="18dp"
+            android:textStyle="bold" />
+        <ImageView
+            android:id="@+id/imguser"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:src="@drawable/phoneno"
+            android:backgroundTint="#333C70"
+            android:layout_marginTop="50dp"
+            android:layout_marginLeft="20dp"/>
+        <EditText
+            android:id="@+id/PHONE"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:hint="Enter Phone Number"
+            android:textSize="20dp"
+            android:inputType="phone"
+            android:layout_marginTop="50dp"
+            android:textColor="@color/white"
+            android:padding="9dp"
+            android:layout_marginLeft="90dp"/>
+
+    </androidx.cardview.widget.CardView>
+
+    <Button
+        android:id="@+id/sendotp"
+        android:layout_width="362dp"
+        android:layout_height="wrap_content"
+        android:backgroundTint="#333C70"
+        android:text="SEND OTP"
+        android:textStyle="bold"
+        android:textSize="20dp"
+        android:layout_below="@+id/card1"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="20dp"/>
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/card2"
+        android:layout_width="362dp"
+        android:layout_height="50dp"
+        android:layout_below="@+id/sendotp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="25dp"
+        android:backgroundTint="#333C70"
+        app:cardCornerRadius="20dp">
+
+        <EditText
+            android:id="@+id/sms1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Enter OTP"
+            android:gravity="center"
+            android:inputType="numberPassword"/>
+
+    </androidx.cardview.widget.CardView>
+
+    <Button
+        android:id="@+id/verify"
+        android:layout_width="362dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/card1"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="165dp"
+        android:backgroundTint="#333C70"
+        android:text="VERIFY"
+        android:textSize="20dp"
+        android:textStyle="bold" />
+    <TextView
+        android:id="@+id/content"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="15dp"
+        android:textColor="@color/white"
+        android:layout_below="@+id/verify"
+        android:layout_marginLeft="20dp"
+        android:padding="10dp"
+        android:text="Didn't recover the verification OTP?"/>
+
+    <Button
+        android:id="@+id/resend"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/verify"
+        android:layout_marginStart="0dp"
+        android:layout_toEndOf="@+id/content"
+        android:backgroundTint="#07145E"
+        android:text="Resend again"
+        android:textSize="15dp"
+        android:padding="10dp"
+        android:textStyle="bold"
+        android:gravity="center"/>
+
+
+</RelativeLayout>
